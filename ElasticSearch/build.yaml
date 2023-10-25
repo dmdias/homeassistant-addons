@@ -6,8 +6,8 @@ build_from:
   armv7: "ghcr.io/home-assistant/armv7-base:3.15"
   i386: "ghcr.io/home-assistant/i386-base:3.15"
 labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: Example2 add-on Daniel"
-  org.opencontainers.image.description: "Example2 add-on to use as a blueprint for new add-ons."
+  org.opencontainers.image.title: "Daniel Dias Add-on: ElasticSearch"
+  org.opencontainers.image.description: "ElasticSearch Addons."
   org.opencontainers.image.source: "https://github.com/home-assistant/addons-example"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
