@@ -3,7 +3,7 @@ name: Example add-on Daniel
 version: "1.2.0"
 slug: example
 description: Exemplo Daniel
-url: "https://github.com/dmdias/homeassistant-addons/main/example"
+url: "https://github.com/dmdias/homeassistant-addons/tree/main/example"
 arch:
   - armhf
   - armv7
