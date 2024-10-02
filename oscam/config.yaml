@@ -1,0 +1,16 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Oscam Server
+version: "1.0.0"
+slug: oscam
+description: Oscam Server
+image: lscr.io/linuxserver/oscam:latest
+url: "https://github.com/dmdias/homeassistant-addons/tree/main/oscam"
+arch:
+  - x86-64
+  - arm64  
+init: false
+ports:
+  1000/tcp: 1000
+  8000/tcp: 8000
+map:
+  - share:rw
