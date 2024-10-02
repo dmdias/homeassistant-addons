@@ -1,0 +1,8 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+labels:
+  org.opencontainers.image.title: "Daniel Dias Add-on: Oscam"
+  org.opencontainers.image.description: "Oscam Addon"
+  org.opencontainers.image.source: "https://github.com/home-assistant/addons-example"
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "20224.09.2"
