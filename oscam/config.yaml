@@ -1,9 +1,8 @@
-name: "OSCam Addon"
-version: "1.0.0"
-slug: "oscam_addon"
-description: "An OSCam addon using the LinuxServer Docker image"
-startup: "services"
-webui: "http://[HOST]:[PORT:9000]"
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Oscam Addon
+version: "1.0.1"
+slug: Oscam Addon
+description: An OSCam addon using the LinuxServer Docker image
 arch:   
   - amd64
   - aarch64  
