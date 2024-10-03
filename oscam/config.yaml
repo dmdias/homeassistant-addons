@@ -5,7 +5,9 @@ description: "An OSCam addon using the LinuxServer Docker image"
 startup: "services"
 webui: "http://[HOST]:[PORT:9000]"
 arch:   
-  - aarch64
+  - amd64       # 64-bit x86 architecture (PCs, servers)
+  - armv7       # 32-bit ARM architecture (Raspberry Pi 3)
+  - aarch64     # 64-bit ARM architecture (Raspberry Pi 4 and other 64-bit ARM devices)
 ports:
   8888/tcp: 8888
   9000/tcp: 9000
