@@ -10,6 +10,6 @@ ports:
   8888/tcp: 8888
   9000/tcp: 9000
 map:
-  - config:rw
+  - homeassistant_config:rw
   - ssl:rw
 image: "linuxserver/oscam:latest"
