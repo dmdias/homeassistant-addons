@@ -12,4 +12,5 @@ ports:
 map:
   - homeassistant_config:rw
   - ssl:rw
-image: "ghcr.io/linuxserver/oscam:latest"  # Change to the correct image if needed
+#image: "ghcr.io/linuxserver/oscam:latest"  # Change to the correct image if needed
+image: "ghcr.io/danieldias/{arch}-addon-oscam"
