@@ -6,7 +6,6 @@ webui: "http://[HOST]:[PORT:9000]"  # Change to the appropriate port
 arch:
   - amd64
   - aarch64
-  - armv7
 ports:
   8888/tcp: 9000
 map:
