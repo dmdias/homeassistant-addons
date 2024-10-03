@@ -6,7 +6,7 @@ url: https://github.com/dmdias/homeassistant-addons/tree/main/oscam-addon
 #webui: "http://[HOST]:[PORT:8889]"
 init: false
 ingress: true
-ingress_port: 8889
+ingress_port: 8888
 ingress_stream: true
 arch:
   - amd64
