@@ -1,5 +1,5 @@
 name: "OnlyOffice Addon"
-version: "1.0.6"
+version: "1.0.7"
 slug: "onlyoffice_addon"
 description: "An OnlyOffice add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/onlyoffice-addon
