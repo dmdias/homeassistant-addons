@@ -26,9 +26,4 @@ jobs:
       # Step 3: Build your Docker image (or whatever your build process is)
       - name: Build Docker image
         run: |
-          docker build -t oscam-addon .
-
-      # Optional Step: Push Docker image to DockerHub (if needed)
-      - name: Push Docker image
-        run: |
-          docker push your-dockerhub-repo/oscam-addon
+          docker build -f oscam/Dockerfile -t oscam-addon .
