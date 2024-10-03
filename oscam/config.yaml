@@ -6,6 +6,7 @@ startup: "services"
 webui: "http://[HOST]:[PORT:9000]"
 arch:   
   - amd64
+  - aarch64  
 ports:
   8888/tcp: 8888
   9000/tcp: 9000
@@ -13,4 +14,3 @@ map:
   - config:rw
   - ssl:rw
 image: "linuxserver/oscam:latest"
-url: "https://github.com/linuxserver/docker-oscam"  # Optional field
