@@ -1,5 +1,8 @@
 # Home Assistant Add-on: OSCam
 
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+
 ## About
 This add-on allows you to run OSCam on Home Assistant using the LinuxServer Docker image.
 
