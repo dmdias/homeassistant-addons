@@ -6,7 +6,6 @@ startup: "services"
 boot: "auto"
 webui: "http://[HOST]:[PORT:9000]"
 arch:
-  - armhf
   - arm64
   - x86-64  
   - i386
