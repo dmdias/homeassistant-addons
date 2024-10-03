@@ -6,3 +6,4 @@ FROM $BUILD_FROM
 #FROM linuxserver/oscam:arm64v8-latest
 
 EXPOSE 8888 9000
+ENTRYPOINT ["/init"]
