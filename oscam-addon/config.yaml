@@ -1,10 +1,13 @@
 name: "OSCam Addon"
-version: "1.0.4"
+version: "1.0.5"
 slug: "oscam_addon"
 description: "An OSCam add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/oscam-addon
-webui: "http://[HOST]:[PORT:8889]"
+#webui: "http://[HOST]:[PORT:8889]"
 init: false
+ingress: true,
+ingress_port: 5555,
+ingress_stream": true,
 arch:
   - amd64
   - aarch64
