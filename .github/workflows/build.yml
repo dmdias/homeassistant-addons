@@ -1,0 +1,34 @@
+name: Build OSCam Addon
+
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+# The jobs to run
+jobs:
+  build:
+    # Run on the latest version of Ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Clear Rekor Cache (to avoid corruption)
+      - name: Clear Rekor Cache
+        run: |
+          rm -rf ~/.rekor
+          mkdir -p ~/.rekor
+
+      # Step 3: Build your Docker image (or whatever your build process is)
+      - name: Build Docker image
+        run: |
+          docker build -t oscam-addon .
+
+      # Optional Step: Push Docker image to DockerHub (if needed)
+      - name: Push Docker image
+        run: |
+          docker push your-dockerhub-repo/oscam-addon
