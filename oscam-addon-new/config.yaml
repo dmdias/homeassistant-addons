@@ -1,8 +1,9 @@
 name: "OSCam Addon"
-version: "1.0.2"
+version: "1.0.3"
 slug: "oscam_addon"
 description: "An OSCam add-on using the LinuxServer Docker image."
 webui: "http://[HOST]:[PORT:9000]"  # Change to the appropriate port
+init: false
 arch:
   - amd64
   - aarch64
