@@ -3,7 +3,7 @@ version: "1.0.4"
 slug: "oscam_addon"
 description: "An OSCam add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/oscam-addon
-webui: "http://[HOST]:[PORT:9000]"
+webui: "http://[HOST]:[PORT:8889]"
 init: false
 arch:
   - amd64
