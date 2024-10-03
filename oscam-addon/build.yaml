@@ -1,0 +1,11 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  aarch64: "scam:arm64v8-latest"
+  amd64: "linuxserver/oscam:amd64-latest"  
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Oscam addon"
+  org.opencontainers.image.description: "Oscam addon"
+  org.opencontainers.image.source: "https://hub.docker.com/r/linuxserver/oscam"
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2024.09.03"
