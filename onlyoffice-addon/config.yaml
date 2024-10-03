@@ -9,6 +9,7 @@ ingress_port: 80
 ingress_stream: true
 arch:
   - amd64
+  - aarch64
 ports:
   80/tcp: 8084
 map:
