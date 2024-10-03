@@ -7,7 +7,7 @@ url: https://github.com/dmdias/homeassistant-addons/tree/main/oscam-addon
 init: false
 ingress: true
 ingress_port: 5555
-ingress_stream": true
+ingress_stream: true
 arch:
   - amd64
   - aarch64
