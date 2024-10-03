@@ -13,5 +13,5 @@ options:
   message: "Oscam"
 schema:
   message: "str?"
-#image: linuxserver/oscam:latest
-image: "ghcr.io/danieldias/{arch}-addon-oscam"
+image: "linuxserver/oscam:latest"
+#image: "ghcr.io/danieldias/{arch}-addon-oscam"
