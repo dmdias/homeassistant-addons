@@ -1,0 +1,17 @@
+name: "OnlyOffice Addon"
+version: "1.0.6"
+slug: "onlyoffice_addon"
+description: "An OnlyOffice add-on using the LinuxServer Docker image."
+url: https://github.com/dmdias/homeassistant-addons/tree/main/onlyoffice-addon
+init: false
+ingress: true
+ingress_port: 80
+ingress_stream: true
+arch:
+  - amd64
+ports:
+  80/tcp: 8084
+map:
+  - share:rw
+  - config:rw
+image: "ghcr.io/dmdias/{arch}-addon-onlyoffice"

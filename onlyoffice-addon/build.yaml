@@ -1,0 +1,9 @@
+build_from:  
+  amd64: "onlyoffice/documentserver:latest"   
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: OnlyOffice"
+  org.opencontainers.image.description: "OnlyOffice addon"
+  org.opencontainers.image.source: "https://github.com/dmdias/homeassistant-addons"  # Update with your repo URL
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2024.09.03"
