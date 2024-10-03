@@ -5,7 +5,11 @@ description: "An OSCam addon using the LinuxServer Docker image"
 startup: "services"
 webui: "http://[HOST]:[PORT:9000]"
 arch:   
+  - armhf
+  - armv7
+  - aarch64
   - amd64
+  - i386
 ports:
   8888/tcp: 8888
   9000/tcp: 9000
