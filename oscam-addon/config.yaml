@@ -1,0 +1,16 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Oscam addon
+version: "1.0.0"
+slug: oscam_addon
+description: Oscam Daniel
+arch:
+  - amd64
+  - aarch64
+init: false
+map:
+  - config:rw
+options:
+  message: "Oscam"
+schema:
+  message: "str?"
+image: linuxserver/oscam:latest
