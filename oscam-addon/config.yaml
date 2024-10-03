@@ -14,7 +14,8 @@ arch:
 ports:
   8888/tcp: 8889
   1000/tcp: 1001
+  22/tcp: 8822
 map:
-  - homeassistant_config:rw
+  - share:rw
   - ssl:rw
 image: "ghcr.io/dmdias/{arch}-addon-oscam"
