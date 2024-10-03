@@ -5,7 +5,7 @@ description: "An OnlyOffice add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/onlyoffice-addon
 init: false
 ingress: true
-ingress_port: 8084
+ingress_port: 80
 ingress_stream: true
 arch:
   - amd64
