@@ -11,5 +11,4 @@ ports:
   9000/tcp: 9000
 map:
   - homeassistant_config:rw
-#image: linuxserver/oscam:latest
-image: "ghcr.io/danieldias/{arch}-addon-oscam"
+image: linuxserver/oscam:latest
