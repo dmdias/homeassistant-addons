@@ -8,7 +8,7 @@ arch:
   - aarch64
 init: false
 map:
-  - config:rw
+  - homeassistant_config:rw
 options:
   message: "Oscam"
 schema:

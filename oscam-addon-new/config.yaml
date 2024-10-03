@@ -13,4 +13,3 @@ map:
   - homeassistant_config:rw
   - ssl:rw
 image: "ghcr.io/linuxserver/oscam:latest"  # Change to the correct image if needed
-icon: "icon.png"  # Ensure the icon is in the root of the repository
