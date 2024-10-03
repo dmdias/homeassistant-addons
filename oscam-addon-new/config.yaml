@@ -2,17 +2,13 @@ name: "OSCam Addon"
 version: "1.0.0"
 slug: "oscam_addon"
 description: "An OSCam add-on using the LinuxServer Docker image."
-startup: "services"
-boot: "auto"
 webui: "http://[HOST]:[PORT:9000]"  # Change to the appropriate port
 arch:
   - amd64
   - aarch64
   - armv7
-options: {}
-schema: {}
 ports:
-  9000/tcp: 9000
+  8888/tcp: 9000
 map:
   - homeassistant_config:rw
   - ssl:rw
