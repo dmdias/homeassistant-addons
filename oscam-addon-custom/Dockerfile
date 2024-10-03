@@ -1,4 +1,6 @@
-FROM alpine:3.13
+
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 RUN apk update && apk add --no-cache \
     build-base \
