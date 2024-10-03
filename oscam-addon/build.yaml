@@ -1,6 +1,4 @@
 build_from:
-  #aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
-  #amd64: "ghcr.io/home-assistant/amd64-base:3.15" 
   aarch64: "lscr.io/linuxserver/oscam:arm64v8-latest"
   amd64: "lscr.io/linuxserver/oscam:amd64-latest"   
 labels:
@@ -9,4 +7,4 @@ labels:
   org.opencontainers.image.source: "https://github.com/dmdias/homeassistant-addons"  # Update with your repo URL
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
-  TEMPIO_VERSION: "2024.09.03"  # Specify the version of any dependencies if needed
+  TEMPIO_VERSION: "2024.09.03"
