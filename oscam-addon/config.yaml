@@ -17,5 +17,5 @@ ports:
   22/tcp: 8822
 map:
   - share:rw
-  - ssl:rw
+  - config:rw
 image: "ghcr.io/dmdias/{arch}-addon-oscam"

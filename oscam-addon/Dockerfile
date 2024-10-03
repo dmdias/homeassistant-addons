@@ -2,6 +2,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+VOLUME ["/share", "/config"]
+
 # Set environment variables
 ENV PUID=1000 \
     PGID=1000 \
