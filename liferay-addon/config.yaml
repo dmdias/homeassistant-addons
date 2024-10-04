@@ -3,7 +3,6 @@ version: "1.0.1"
 slug: "liferay_addon"
 description: "An Liferay add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/liferay-addon
-webui: "http://[HOST]:[PORT:8080]"
 init: false
 ingress: true
 ingress_port: 8080
@@ -14,7 +13,7 @@ arch:
 ports:
   8080/tcp: 8882  
   8000/tcp: 8880
-  11311/tcp: 88311
+  11311/tcp: 8811
 map:
   - share:rw
   - config:rw
