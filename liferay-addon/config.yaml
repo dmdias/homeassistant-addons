@@ -21,12 +21,12 @@ schema:
   liferay_jpda_enabled: "Enable JPDA"
   jpda_address: "JPDA Address"
 environment:
-  LIFERAY_JVM_OPTS: "{{options.liferay_jvm_opts}}"
-  LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE: "{{options.osgi_period}}"
-  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "{{options.liferay_hosts}}"
-  JAVA_VERSION: "{{options.java_version}}"
-  LIFERAY_JPDA_ENABLED: "{{options.liferay_jpda_enabled}}"
-  JPDA_ADDRESS: "{{options.jpda_address}}"
+  LIFERAY_JVM_OPTS: "{{ options.liferay_jvm_opts }}"
+  LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE: "{{ options.osgi_period }}"
+  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "{{ options.liferay_hosts }}"
+  JAVA_VERSION: "{{ options.java_version }}"
+  LIFERAY_JPDA_ENABLED: "{{ options.liferay_jpda_enabled }}"
+  JPDA_ADDRESS: "{{ options.jpda_address }}"
 arch:
   - amd64
   - aarch64
@@ -36,5 +36,5 @@ ports:
   11311/tcp: 8811
 map:
   - share:rw
-  - homeassistant_config:rw
+  - config:rw
 image: "ghcr.io/dmdias/{arch}-addon-liferay"
