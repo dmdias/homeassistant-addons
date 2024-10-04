@@ -7,33 +7,33 @@ init: false
 ingress: true
 ingress_port: 8080
 ingress_stream: true
-options:
-  liferay_jvm_opts: "-Xms2g -Xmx2g -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
-  osgi_period: "0.0.0.0:11311"
-  liferay_hosts: "127.0.0.1,192.168.1.154,liferay.dmdias.info"
-  java_version: "zulu21"
-  liferay_jpda_enabled: "true -e"
-  jpda_address: "8000"
-schema:
-  liferay_jvm_opts: "JVP OPTS"
-  osgi_period: "OGSI Period"
-  java_version: "Java Version (zulu11,zulu17,zulu21)"
-  liferay_jpda_enabled: "Enable JPDA"
-  jpda_address: "JPDA Address"
-environment:
-  LIFERAY_JVM_OPTS: "{{ options.liferay_jvm_opts }}"
-  LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE: "{{ options.osgi_period }}"
-  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "{{ options.liferay_hosts }}"
-  JAVA_VERSION: "{{ options.java_version }}"
-  LIFERAY_JPDA_ENABLED: "{{ options.liferay_jpda_enabled }}"
-  JPDA_ADDRESS: "{{ options.jpda_address }}"
+#options:
+#  liferay_jvm_opts: "-Xms2g -Xmx2g -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+#  osgi_period: "0.0.0.0:11311"
+#  liferay_hosts: "127.0.0.1,192.168.1.154,liferay.dmdias.info"
+#  java_version: "zulu21"
+#  liferay_jpda_enabled: "true -e"
+#  jpda_address: "8000"
+#schema:
+#  liferay_jvm_opts: "JVP OPTS"
+#  osgi_period: "OGSI Period"
+#  java_version: "Java Version (zulu11,zulu17,zulu21)"
+#  liferay_jpda_enabled: "Enable JPDA"
+#  jpda_address: "JPDA Address"
+#environment:
+#  LIFERAY_JVM_OPTS: "{{ options.liferay_jvm_opts }}"
+#  LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE: "{{ options.osgi_period }}"
+#  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "{{ options.liferay_hosts }}"
+#  JAVA_VERSION: "{{ options.java_version }}"
+#  LIFERAY_JPDA_ENABLED: "{{ options.liferay_jpda_enabled }}"
+#  JPDA_ADDRESS: "{{ options.jpda_address }}"
 arch:
   - amd64
   - aarch64
 ports:
-  8080/tcp: 8882  
-  8000/tcp: 8880
-  11311/tcp: 8811
+  "8080/tcp": 8882  
+  "8000/tcp": 8880
+  "11311/tcp": 8811
 map:
   - share:rw
   - config:rw
