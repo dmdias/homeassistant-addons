@@ -4,7 +4,10 @@
 
 This repository contains the following add-ons
 
+### [OnlyOffice add-on](./onlyoffice-addon)
+### [Liferay add-on](./liferay-addon)
 ### [OScam add-on](./oscam-addon)
+
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]

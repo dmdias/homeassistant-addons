@@ -1,0 +1,10 @@
+build_from:
+  aarch64: "liferay/portal:7.4.3.125-ga125"
+  amd64: "liferay/portal:7.4.3.125-ga125"   
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Liferay"
+  org.opencontainers.image.description: "Liferay addon"
+  org.opencontainers.image.source: "https://github.com/dmdias/homeassistant-addons"  # Update with your repo URL
+  org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  TEMPIO_VERSION: "2024.09.04"
