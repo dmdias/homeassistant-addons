@@ -1,5 +1,5 @@
 name: "Liferay Addon"
-version: "1.0.5"
+version: "1.0.4"
 slug: "liferay_addon"
 description: "An Liferay add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/liferay-addon
@@ -22,9 +22,7 @@ ingress_stream: true
 #  java_version: "Java Version (zulu11,zulu17,zulu21)"
 #  liferay_jpda_enabled: "Enable JPDA"
 #  jpda_address: "JPDA Address"
-environment:
-  LIFERAY_JVM_OPTS: "-Xms2g -Xmx2g -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
-  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "127.0.0.1,192.168.1.154,liferay.dmdias.info"
+#environment:
 #  LIFERAY_JVM_OPTS: "{{ options.liferay_jvm_opts }}"
 #  LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE: "{{ options.osgi_period }}"
 #  LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "{{ options.liferay_hosts }}"
