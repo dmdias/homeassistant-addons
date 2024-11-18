@@ -39,5 +39,5 @@ ports:
   "11311/tcp": 8811
 map:
   - share:rw
-  - config:rw
+  - homeassistant_config:rw
 image: "ghcr.io/dmdias/{arch}-addon-liferay"
