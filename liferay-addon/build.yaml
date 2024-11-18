@@ -7,4 +7,4 @@ labels:
   org.opencontainers.image.source: "https://github.com/dmdias/homeassistant-addons"  # Update with your repo URL
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
-  TEMPIO_VERSION: "2024.09.04"
+  TEMPIO_VERSION: "2024.11.18"

@@ -1,5 +1,5 @@
 name: "Liferay Addon"
-version: "1.0.1"
+version: "1.0.2"
 slug: "liferay_addon"
 description: "An Liferay add-on using the LinuxServer Docker image."
 url: https://github.com/dmdias/homeassistant-addons/tree/main/liferay-addon
@@ -7,13 +7,13 @@ init: false
 ingress: true
 ingress_port: 8080
 ingress_stream: true
-#options:
-#  liferay_jvm_opts: "-Xms2g -Xmx2g -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
-#  osgi_period: "0.0.0.0:11311"
-#  liferay_hosts: "127.0.0.1,192.168.1.154,liferay.dmdias.info"
-#  java_version: "zulu21"
-#  liferay_jpda_enabled: "true -e"
-#  jpda_address: "8000"
+options:
+  liferay_jvm_opts: "-Xms2g -Xmx2g -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+  osgi_period: "0.0.0.0:11311"
+  liferay_hosts: "127.0.0.1,192.168.1.154,liferay.dmdias.info"
+  java_version: "zulu21"
+  liferay_jpda_enabled: "true -e"
+  jpda_address: "8000"
 #schema:
 #  liferay_jvm_opts: "JVP OPTS"
 #  osgi_period: "OGSI Period"
